@@ -432,6 +432,116 @@
       "home": "Arsenal",
       "away": "Chelsea",
       "frozen_at": "2026-09-05T16:23:16Z"
+    },
+    "560572": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 47,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 47,
+        "n": 28,
+        "d": 25
+      },
+      "eh": 1462,
+      "ea": 1414,
+      "home": "Crystal Palace",
+      "away": "Ipswich Town",
+      "frozen_at": "2026-09-11T14:42:40Z"
+    },
+    "560573": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 50,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 50,
+        "n": 28,
+        "d": 23
+      },
+      "eh": 1528,
+      "ea": 1457,
+      "home": "Liverpool",
+      "away": "Fulham",
+      "frozen_at": "2026-09-11T14:42:40Z"
+    },
+    "560574": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 45,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 45,
+        "n": 28,
+        "d": 27
+      },
+      "eh": 1508,
+      "ea": 1478,
+      "home": "Aston Villa",
+      "away": "Nottingham",
+      "frozen_at": "2026-09-11T14:42:40Z"
+    },
+    "560576": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 44,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 44,
+        "n": 28,
+        "d": 28
+      },
+      "eh": 1534,
+      "ea": 1516,
+      "home": "Bournemouth",
+      "away": "Brentford",
+      "frozen_at": "2026-09-11T14:42:40Z"
+    },
+    "560581": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 48,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 48,
+        "n": 28,
+        "d": 24
+      },
+      "eh": 1503,
+      "ea": 1448,
+      "home": "Chelsea",
+      "away": "Hull City",
+      "frozen_at": "2026-09-11T14:42:40Z"
     }
   }
 }
