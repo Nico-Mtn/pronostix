@@ -416,6 +416,28 @@
       "home": "Stade Rennais",
       "away": "Marseille",
       "frozen_at": "2026-09-10T20:24:59Z"
+    },
+    "559687": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 40,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 31
+      },
+      "proba": {
+        "v": 40,
+        "n": 29,
+        "d": 31
+      },
+      "eh": 1538,
+      "ea": 1561,
+      "home": "Strasbourg",
+      "away": "Monaco",
+      "frozen_at": "2026-09-11T18:00:18Z"
     }
   }
 }

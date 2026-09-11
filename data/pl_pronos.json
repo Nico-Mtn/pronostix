@@ -542,6 +542,28 @@
       "home": "Chelsea",
       "away": "Hull City",
       "frozen_at": "2026-09-11T14:42:40Z"
+    },
+    "560575": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 2,
+        "sa": 1,
+        "issue": "V",
+        "conf": 36
+      },
+      "proba": {
+        "v": 36,
+        "n": 29,
+        "d": 35
+      },
+      "eh": 1435,
+      "ea": 1494,
+      "home": "Tottenham",
+      "away": "Everton",
+      "frozen_at": "2026-09-11T18:00:23Z"
     }
   }
 }
