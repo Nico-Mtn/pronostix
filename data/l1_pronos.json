@@ -526,6 +526,28 @@
       "home": "Paris FC",
       "away": "Olympique Lyon",
       "frozen_at": "2026-09-11T21:05:53Z"
+    },
+    "559685": {
+      "sh": 2,
+      "sa": 0,
+      "issue": "V",
+      "conf": 58,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 25
+      },
+      "proba": {
+        "v": 58,
+        "n": 25,
+        "d": 16
+      },
+      "eh": 1575,
+      "ea": 1423,
+      "home": "Lille",
+      "away": "Troyes",
+      "frozen_at": "2026-09-12T13:48:42Z"
     }
   }
 }

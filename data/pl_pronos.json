@@ -586,6 +586,28 @@
       "home": "Sunderland",
       "away": "Arsenal",
       "frozen_at": "2026-09-11T21:05:56Z"
+    },
+    "560578": {
+      "sh": 1,
+      "sa": 2,
+      "issue": "D",
+      "conf": 40,
+      "second": {
+        "sh": 2,
+        "sa": 1,
+        "issue": "V",
+        "conf": 31
+      },
+      "proba": {
+        "v": 31,
+        "n": 29,
+        "d": 40
+      },
+      "eh": 1399,
+      "ea": 1505,
+      "home": "Coventry City",
+      "away": "Brighton Hove",
+      "frozen_at": "2026-09-12T13:48:44Z"
     }
   }
 }
