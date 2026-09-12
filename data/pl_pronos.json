@@ -608,6 +608,28 @@
       "home": "Coventry City",
       "away": "Brighton Hove",
       "frozen_at": "2026-09-12T13:48:44Z"
+    },
+    "560580": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 2,
+        "sa": 1,
+        "issue": "V",
+        "conf": 37
+      },
+      "proba": {
+        "v": 37,
+        "n": 29,
+        "d": 34
+      },
+      "eh": 1571,
+      "ea": 1618,
+      "home": "Man United",
+      "away": "Man City",
+      "frozen_at": "2026-09-12T16:38:51Z"
     }
   }
 }

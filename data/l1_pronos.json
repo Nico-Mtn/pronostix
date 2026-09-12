@@ -548,6 +548,28 @@
       "home": "Lille",
       "away": "Troyes",
       "frozen_at": "2026-09-12T13:48:42Z"
+    },
+    "559686": {
+      "sh": 1,
+      "sa": 2,
+      "issue": "D",
+      "conf": 43,
+      "second": {
+        "sh": 2,
+        "sa": 1,
+        "issue": "V",
+        "conf": 29
+      },
+      "proba": {
+        "v": 29,
+        "n": 28,
+        "d": 43
+      },
+      "eh": 1416,
+      "ea": 1554,
+      "home": "Le Mans",
+      "away": "RC Lens",
+      "frozen_at": "2026-09-12T16:38:49Z"
     }
   }
 }
