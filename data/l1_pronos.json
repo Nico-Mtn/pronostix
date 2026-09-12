@@ -570,6 +570,28 @@
       "home": "Le Mans",
       "away": "RC Lens",
       "frozen_at": "2026-09-12T16:38:49Z"
+    },
+    "559691": {
+      "sh": 1,
+      "sa": 2,
+      "issue": "D",
+      "conf": 40,
+      "second": {
+        "sh": 2,
+        "sa": 1,
+        "issue": "V",
+        "conf": 31
+      },
+      "proba": {
+        "v": 31,
+        "n": 29,
+        "d": 40
+      },
+      "eh": 1477,
+      "ea": 1583,
+      "home": "Brest",
+      "away": "PSG",
+      "frozen_at": "2026-09-12T18:52:31Z"
     }
   }
 }
