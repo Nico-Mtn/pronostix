@@ -762,6 +762,28 @@
       "home": "Newcastle",
       "away": "Hull City",
       "frozen_at": "2026-09-18T14:42:16Z"
+    },
+    "560589": {
+      "sh": 1,
+      "sa": 0,
+      "issue": "V",
+      "conf": 53,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 27
+      },
+      "proba": {
+        "v": 53,
+        "n": 27,
+        "d": 20
+      },
+      "eh": 1492,
+      "ea": 1386,
+      "home": "Nottingham",
+      "away": "Coventry City",
+      "frozen_at": "2026-09-18T17:57:56Z"
     }
   }
 }
