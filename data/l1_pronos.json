@@ -636,6 +636,94 @@
       "home": "Paris FC",
       "away": "Strasbourg",
       "frozen_at": "2026-09-18T17:57:54Z"
+    },
+    "559677": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 37
+      },
+      "proba": {
+        "v": 34,
+        "n": 29,
+        "d": 37
+      },
+      "eh": 1418,
+      "ea": 1498,
+      "home": "Le Mans",
+      "away": "Lorient",
+      "frozen_at": "2026-09-18T20:24:45Z"
+    },
+    "559680": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 46,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 46,
+        "n": 28,
+        "d": 26
+      },
+      "eh": 1478,
+      "ea": 1445,
+      "home": "Toulouse",
+      "away": "Le Havre",
+      "frozen_at": "2026-09-18T20:24:45Z"
+    },
+    "559681": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 45,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 45,
+        "n": 28,
+        "d": 27
+      },
+      "eh": 1445,
+      "ea": 1417,
+      "home": "Angers SCO",
+      "away": "Troyes",
+      "frozen_at": "2026-09-18T20:24:45Z"
+    },
+    "559683": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 40,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 31
+      },
+      "proba": {
+        "v": 40,
+        "n": 29,
+        "d": 31
+      },
+      "eh": 1553,
+      "ea": 1570,
+      "home": "Olympique Lyon",
+      "away": "Stade Rennais",
+      "frozen_at": "2026-09-18T20:24:45Z"
     }
   }
 }
