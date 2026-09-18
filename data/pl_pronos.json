@@ -674,6 +674,94 @@
       "home": "Brentford",
       "away": "Chelsea",
       "frozen_at": "2026-09-17T19:08:23Z"
+    },
+    "560587": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 2,
+        "sa": 1,
+        "issue": "V",
+        "conf": 36
+      },
+      "proba": {
+        "v": 36,
+        "n": 29,
+        "d": 35
+      },
+      "eh": 1435,
+      "ea": 1494,
+      "home": "Tottenham",
+      "away": "Aston Villa",
+      "frozen_at": "2026-09-18T14:42:16Z"
+    },
+    "560584": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 49,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 49,
+        "n": 28,
+        "d": 23
+      },
+      "eh": 1494,
+      "ea": 1428,
+      "home": "Everton",
+      "away": "Ipswich Town",
+      "frozen_at": "2026-09-18T14:42:16Z"
+    },
+    "560586": {
+      "sh": 1,
+      "sa": 2,
+      "issue": "D",
+      "conf": 42,
+      "second": {
+        "sh": 2,
+        "sa": 1,
+        "issue": "V",
+        "conf": 30
+      },
+      "proba": {
+        "v": 30,
+        "n": 29,
+        "d": 42
+      },
+      "eh": 1518,
+      "ea": 1644,
+      "home": "Brighton Hove",
+      "away": "Arsenal",
+      "frozen_at": "2026-09-18T14:42:16Z"
+    },
+    "560588": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 46,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 46,
+        "n": 28,
+        "d": 26
+      },
+      "eh": 1485,
+      "ea": 1451,
+      "home": "Newcastle",
+      "away": "Hull City",
+      "frozen_at": "2026-09-18T14:42:16Z"
     }
   }
 }
