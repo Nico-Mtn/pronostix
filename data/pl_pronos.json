@@ -850,6 +850,28 @@
       "home": "Man City",
       "away": "Sunderland",
       "frozen_at": "2026-09-19T14:02:51Z"
+    },
+    "560583": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 39
+      },
+      "proba": {
+        "v": 32,
+        "n": 29,
+        "d": 39
+      },
+      "eh": 1461,
+      "ea": 1559,
+      "home": "Fulham",
+      "away": "Man United",
+      "frozen_at": "2026-09-19T17:20:40Z"
     }
   }
 }

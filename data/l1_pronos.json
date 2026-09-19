@@ -746,6 +746,28 @@
       "home": "Auxerre",
       "away": "Brest",
       "frozen_at": "2026-09-19T14:02:50Z"
+    },
+    "559678": {
+      "sh": 1,
+      "sa": 2,
+      "issue": "D",
+      "conf": 45,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 27,
+        "n": 28,
+        "d": 45
+      },
+      "eh": 1424,
+      "ea": 1581,
+      "home": "Nice",
+      "away": "Lille",
+      "frozen_at": "2026-09-19T17:20:38Z"
     }
   }
 }
