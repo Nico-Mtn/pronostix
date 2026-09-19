@@ -768,6 +768,28 @@
       "home": "Nice",
       "away": "Lille",
       "frozen_at": "2026-09-19T17:20:38Z"
+    },
+    "559675": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 37
+      },
+      "proba": {
+        "v": 34,
+        "n": 29,
+        "d": 37
+      },
+      "eh": 1511,
+      "ea": 1593,
+      "home": "Marseille",
+      "away": "PSG",
+      "frozen_at": "2026-09-19T19:25:48Z"
     }
   }
 }
