@@ -724,6 +724,28 @@
       "home": "Olympique Lyon",
       "away": "Stade Rennais",
       "frozen_at": "2026-09-18T20:24:45Z"
+    },
+    "559676": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 41,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 30
+      },
+      "proba": {
+        "v": 41,
+        "n": 29,
+        "d": 30
+      },
+      "eh": 1455,
+      "ea": 1467,
+      "home": "Auxerre",
+      "away": "Brest",
+      "frozen_at": "2026-09-19T14:02:50Z"
     }
   }
 }
