@@ -26,7 +26,8 @@ Sorties (par championnat) : <slug>/index.html, <slug>/data.json,
 
 Usage : python3 l1.py   (variable d'env FOOTBALLDATA_KEY)
 """
-import os, sys, json, math, hashlib, datetime, unicodedata, urllib.request, urllib.error, urllib.parse
+import os, sys, re, html, json, math, hashlib, datetime, unicodedata
+import urllib.request, urllib.error, urllib.parse
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 API = "https://api.football-data.org/v4"
@@ -52,11 +53,15 @@ LEAGUES = [
     {"slug": "ligue-1-france", "prefix": "l1", "code": "FL1", "nom": "Ligue 1",
      "flag": "fr", "couleur": "#173a7a", "saison": 2026, "libelle": "2026-2027",
      "yt_base": "https://www.youtube.com/channel/UCQsH5XtIc9hONE1BQjucM0g/search",
-     "yt_q": "Résumé {ord} journée Ligue 1 {sc}"},
+     "yt_q": "Résumé {ord} journée Ligue 1 {sc}",
+     "yt_chan": "UCQsH5XtIc9hONE1BQjucM0g",
+     "yt_motif": r"^Résumé\s+(\d+)\s*(?:ère|ème|e)\s+journée\b.*{sc}"},
     {"slug": "premier-league-england", "prefix": "pl", "code": "PL", "nom": "Premier League",
      "flag": "gb-eng", "couleur": "#c8102e", "saison": 2026, "libelle": "2026-2027",
      "yt_base": "https://www.youtube.com/@premierleague/search",
-     "yt_q": "Matchweek {j} {sl} Premier League Highlights"},
+     "yt_q": "Matchweek {j} {sl} Premier League Highlights",
+     "yt_chan": "UCG5qGWdu8nIRZqJ_GgDwQ-w",
+     "yt_motif": r"Matchweek\s+(\d+)\b.*{sl}"},
 ]
 LG = LEAGUES[0]              # championnat courant (réassigné par set_league)
 OUTDIR = os.path.join(ROOT, LG["slug"])
@@ -82,23 +87,90 @@ def flag_img(code, taille=20):
     return (f'<img class="flg" src="https://flagcdn.com/w40/{code}.png" '
             f'width="{taille}" height="{int(taille * 0.75)}" alt="" loading="lazy">')
 
-def videos_journees(lg, journees):
-    """URL du résumé vidéo officiel, pour chaque journée.
+def _flux_youtube(chaine):
+    """15 dernières vidéos d'une chaîne, via son flux RSS PUBLIC.
 
-    On ne prétend pas pointer LA vidéo : on ouvre la chaîne officielle du
-    championnat avec la recherche déjà remplie sur la journée demandée. C'est
-    honnête, gratuit, et ça résiste au fait qu'une vidéo soit publiée en retard,
-    renommée, ou retirée — trois cas fréquents avec les droits audiovisuels."""
+    Aucune clé d'API, aucun quota, aucune dépendance : YouTube expose ce flux
+    librement pour toute chaîne. Renvoie [(identifiant_video, titre), …], ou une
+    liste vide si le réseau tousse — auquel cas on se rabat sur la recherche."""
+    url = f"https://www.youtube.com/feeds/videos.xml?channel_id={chaine}"
+    try:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Pronostix/1.0 (+https://github.com/Nico-Mtn)"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            xml = r.read().decode("utf-8", "replace")
+    except Exception as e:
+        print(f"[WARN] flux YouTube {chaine} indisponible : {e}", file=sys.stderr)
+        return []
+    out = []
+    for entree in re.findall(r"<entry>(.*?)</entry>", xml, re.S):
+        vid = re.search(r"<yt:videoId>([\w-]+)</yt:videoId>", entree)
+        tit = re.search(r"<media:title>(.*?)</media:title>", entree, re.S)
+        if vid and tit:
+            out.append((vid.group(1), html.unescape(tit.group(1)).strip()))
+    return out
+
+def videos_journees(lg, journees):
+    """Lien du résumé vidéo officiel de chaque journée, résolu AUTOMATIQUEMENT.
+
+    Le flux RSS de la chaîne officielle donne le titre et l'identifiant des 15
+    dernières vidéos : on y reconnaît « Résumé 5ème journée… » ou « Matchweek 5… »
+    et on en tire l'URL exacte de la vidéo. Le résultat est mis en cache, car le
+    flux ne remonte pas au-delà de 15 publications — or le site se reconstruit
+    toutes les 30 minutes, donc chaque résumé est capté pendant qu'il est encore
+    récent, puis conservé pour toute la saison.
+
+    Tant qu'une journée n'a pas été reconnue (vidéo pas encore publiée, titre
+    inhabituel), on renvoie la recherche de la chaîne officielle pré-remplie sur
+    cette journée : le lecteur arrive au bon endroit dans tous les cas."""
     base, gabarit = lg.get("yt_base"), lg.get("yt_q")
-    if not (base and gabarit):
-        return {}
     a, b = lg["libelle"].split("-")            # « 2026-2027 »
     court, long = f"{a[2:]}/{b[2:]}", f"{a}/{b[2:]}"
+
+    chemin = data_path("videos")
+    cache = {}
+    try:
+        with open(chemin, encoding="utf-8") as f:
+            d = json.load(f)
+        if d.get("saison") == lg["libelle"]:   # une nouvelle saison repart à zéro
+            cache = d.get("videos") or {}
+    except Exception:
+        pass
+
+    if lg.get("yt_chan") and lg.get("yt_motif"):
+        rx = re.compile(lg["yt_motif"].format(sc=re.escape(court), sl=re.escape(long)), re.I)
+        neuf = []
+        for vid, titre in _flux_youtube(lg["yt_chan"]):
+            m = rx.search(titre)
+            if not m:
+                continue
+            j = str(int(m.group(1)))
+            if cache.get(j) != vid:
+                cache[j] = vid
+                neuf.append(f"J{j}={vid}")
+        if neuf:
+            print(f"[VIDEO] {lg['slug']} : {len(neuf)} résumé(s) résolu(s) — {', '.join(neuf)}")
+            try:
+                os.makedirs(os.path.dirname(chemin), exist_ok=True)
+                with open(chemin, "w", encoding="utf-8") as f:
+                    json.dump({"_meta": {"role": "Résumés vidéo officiels reconnus dans le flux "
+                                                 "RSS de la chaîne, par journée. Conservés car le "
+                                                 "flux ne remonte qu'aux 15 dernières vidéos.",
+                                         "author": "Nico-Mtn"},
+                               "saison": lg["libelle"], "videos": cache},
+                              f, ensure_ascii=False, indent=1)
+            except Exception as e:
+                print(f"[WARN] écriture du cache vidéo : {e}", file=sys.stderr)
+
     out = {}
     for j in journees:
-        ordinal = "1ère" if j == 1 else f"{j}ème"
-        q = gabarit.format(ord=ordinal, j=j, sc=court, sl=long)
-        out[str(j)] = base + "?query=" + urllib.parse.quote(q)
+        k = str(j)
+        if cache.get(k):
+            out[k] = f"https://www.youtube.com/watch?v={cache[k]}"
+        elif base and gabarit:
+            ordinal = "1ère" if j == 1 else f"{j}ème"
+            q = gabarit.format(ord=ordinal, j=j, sc=court, sl=long)
+            out[k] = base + "?query=" + urllib.parse.quote(q)
     return out
 
 def nav_html(current_slug):
@@ -958,6 +1030,10 @@ color:var(--mut);text-decoration:none;font-size:10px;font-weight:800;
 text-transform:none;letter-spacing:0;white-space:nowrap}
 .vid .pl{font-size:9px;color:#e5332a}
 .vid:hover{border-color:#e5332a;color:#e5332a}
+/* Vidéo identifiée : la pastille prend franchement le rouge de la lecture. */
+.vid.ok{border-color:rgba(229,51,42,.45);color:var(--fg)}
+.vid.ok:hover{background:#e5332a;border-color:#e5332a;color:#fff}
+.vid.ok:hover .pl{color:#fff}
 .jsec>summary .cnt+.vid{margin-left:8px}
 .jrn .vid{margin-left:8px;vertical-align:middle}
 .ctitle .vid{margin-left:auto}
@@ -1307,8 +1383,13 @@ var feedOuvert={};
 function videoLien(j, ms){
  var u=(DATA.videos||{})[j];
  if(!u || !ms.some(function(m){return m.reel;})) return "";
- return '<a class="vid" href="'+esc(u)+'" target="_blank" rel="noopener"'
-  +' onclick="event.stopPropagation()" title="Résumé vidéo officiel de la journée '+j+'">'
+ // Vidéo reconnue dans le flux de la chaîne, ou repli sur sa recherche : on le
+ // dit dans l'infobulle plutôt que de laisser croire à un lien direct.
+ var direct = u.indexOf("/watch?v=") > 0;
+ var t = direct ? "Résumé vidéo officiel de la journée "+j
+                : "Chercher le résumé de la journée "+j+" sur la chaîne officielle";
+ return '<a class="vid'+(direct?" ok":"")+'" href="'+esc(u)+'" target="_blank" rel="noopener"'
+  +' onclick="event.stopPropagation()" title="'+t+'">'
   +'<span class="pl">▶</span>Résumé</a>';
 }
 function sections(ms, opt){
