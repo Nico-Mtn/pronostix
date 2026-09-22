@@ -63,7 +63,8 @@ jobs:
                    data/l1_pronos.json data/l1_cache.json data/l1_elo_start.json \
                    data/pl_pronos.json data/pl_cache.json data/pl_elo_start.json \
                    data/l1_teams.json data/l1_prev_table.json \
-                   data/pl_teams.json data/pl_prev_table.json; do
+                   data/pl_teams.json data/pl_prev_table.json \
+                   data/l1_videos.json data/pl_videos.json; do
             [ -e "$f" ] && git add "$f"
           done
           git diff --staged --quiet || git commit -m "Championnats - MAJ auto $(date -u +%Y-%m-%d) [skip ci]"
