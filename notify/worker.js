@@ -40,7 +40,11 @@ export default {
       const body = await req.json().catch(() => null);
       // Rétrocompatible : l'ancien site postait directement l'objet PushSubscription.
       const sub = body && (body.subscription || (body.endpoint ? body : null));
-      const topics = filtre(body && body.topics);
+      // Format historique (page Coupe du Monde) : la PushSubscription arrive seule,
+      // sans liste de topics. On la rattache à la CdM plutôt que de la refuser.
+      const brut = !!(body && !body.subscription && body.endpoint);
+      const topics = brut && !(body.topics || []).length
+        ? ['pronostics-cdm2026'] : filtre(body && body.topics);
       if (!sub || !sub.endpoint || !topics.length) return json({ erreur: 'requête invalide' }, 400);
       const cle = 'sub:' + await sha(sub.endpoint);
       const ancien = await env.SUBS.get(cle, 'json');
@@ -105,13 +109,15 @@ export default {
     return new Response('Pronostix push service', { headers: cors });
   },
 
-  /* Cron Triggers Cloudflare (fiables, contrairement au cron GitHub, qui sautait
-     régulièrement des exécutions). Déclenche les workflows GitHub via l'API.
-     Secret attendu : GH_TOKEN (PAT fine-grained, dépôt Nico-Mtn/pronostix,
-     permission Actions: Read and write).
-     Crons configurés :
-       "*/15 11-22 * * *" → annonce de journée, 1 h avant le premier coup d'envoi
-       "0 7,8 * * *"      → résumé de la journée terminée, 9 h Paris (été / hiver) */
+  // Cron Triggers Cloudflare (fiables, contrairement au cron GitHub, qui sautait
+  // régulièrement des exécutions). Déclenche les workflows GitHub via l'API.
+  // Secret attendu : GH_TOKEN (PAT fine-grained, dépôt Nico-Mtn/pronostix,
+  // permission Actions: Read and write).
+  // Crons configurés, UN déclencheur par ligne dans le tableau de bord :
+  //   "*/15 11-22 * * *" → annonce de journée, 1 h avant le premier coup d'envoi
+  //   "0 7,8 * * *"      → résumé de la journée terminée, 9 h Paris (été / hiver)
+  // Commentaires en // et non en /* */ : l'expression « */15 » refermait le bloc
+  // de commentaire et cassait la syntaxe du fichier entier.
   async scheduled(event, env, ctx) {
     const REPO = 'Nico-Mtn/pronostix';
     const dispatch = async (wf) => {
