@@ -8,6 +8,11 @@ s'abonne à l'une, à l'autre, ou aux deux.
 | **Annonce de journée** | 1 h avant le premier coup d'envoi | Les affiches, les horaires, les pronos de Nono |
 | **Bilan de journée** | Le lendemain à 9 h (Paris) | Exacts / bons / ratés de la journée, lien direct vers cette journée du calendrier |
 
+> **Adresse du Worker** : `https://pronobot-push.nico-mtn.workers.dev` depuis le
+> changement de sous-domaine Cloudflare d'octobre 2026. L'ancienne adresse
+> (`…nicolasmartin-contact.workers.dev`) ne répond plus : le site, le gabarit de la
+> Coupe du Monde et le secret `SUBS_URL` doivent tous pointer vers la nouvelle.
+
 Tout le code est déjà dans le dépôt et déployé sur le site. **Il reste une seule
 étape manuelle : mettre à jour le Worker Cloudflare.** Tant qu'elle n'est pas faite,
 le bouton « Activer » des pages de championnat répond « Réessayer » — l'ancien Worker
@@ -92,7 +97,7 @@ repasse n'envoie jamais deux fois le même message.
 Dans le navigateur, ouvre :
 
 ```
-https://pronobot-push.nicolasmartin-contact.workers.dev/topics?endpoint=test
+https://pronobot-push.nico-mtn.workers.dev/topics?endpoint=test
 ```
 
 Réponse attendue : `{"topics":[]}`.
@@ -137,7 +142,7 @@ Déjà en place depuis la Coupe du Monde, rien à refaire :
 | Secret | Rôle |
 |---|---|
 | `VAPID_PUBLIC` / `VAPID_PRIVATE` | Signature des notifications push |
-| `SUBS_URL` | URL du Worker, **sans** `/subscribe` |
+| `SUBS_URL` | URL du Worker, **sans** `/subscribe` : `https://pronobot-push.nico-mtn.workers.dev` |
 | `PUSH_LIST_SECRET` | Protège `/list` et `/remove` |
 
 ---
