@@ -43,6 +43,12 @@ const COMPETITIONS = [
 ];
 const AVANT_MIN = 45, AVANT_MAX = 75;   // fenêtre d'envoi de l'annonce, en minutes
 const HEURE_RESUME = 9;                 // heure de Paris pour le résumé
+// Un résumé n'a de sens que le lendemain. Au-delà de ce délai après le dernier
+// match de la journée, il est périmé : on le marque comme traité sans l'envoyer.
+// Sans ce garde-fou, la première mise en service (ou une panne de quelques jours)
+// rattrapait un vieux bilan, et les abonnés recevaient la J5 deux semaines après.
+const RESUME_MAX_H = 36;
+const DUREE_MATCH_H = 2;                // coup d'envoi → fin, marge comprise
 
 const maintenant = new Date();
 
@@ -124,12 +130,17 @@ function messageResume(data, comp, j) {
   };
 }
 
+async function abonnes(topic) {
+  const base = SUBS_URL.replace(/\/$/, '');
+  const r = await fetch(`${base}/list?key=${encodeURIComponent(LIST_SECRET)}&topic=${encodeURIComponent(topic)}`);
+  if (!r.ok) throw new Error(`liste des abonnés (${base}) : HTTP ${r.status}`);
+  return r.json();
+}
+
 async function envoyer(topic, message) {
   if (SEC) { console.log('[DRY_RUN]', topic, JSON.stringify(message)); return; }
   const base = SUBS_URL.replace(/\/$/, '');
-  const r = await fetch(`${base}/list?key=${encodeURIComponent(LIST_SECRET)}&topic=${encodeURIComponent(topic)}`);
-  if (!r.ok) throw new Error(`liste des abonnés : HTTP ${r.status}`);
-  const subs = await r.json();
+  const subs = await abonnes(topic);
   const charge = JSON.stringify(message);
   let ok = 0, partis = 0;
   // Envoi par lots : une boucle strictement séquentielle ne tiendrait pas
@@ -149,6 +160,25 @@ async function envoyer(topic, message) {
     }));
   }
   console.log(`  → ${topic} : ${ok} envoyé(s), ${partis} abonnement(s) expiré(s) retiré(s)`);
+}
+
+// En mode à blanc, on vérifie quand même la liaison avec le Worker : c'est le
+// seul moyen de valider SUBS_URL et LIST_SECRET sans envoyer de notification.
+// La lecture de la liste ne modifie rien.
+if (SEC) {
+  if (!SUBS_URL || !LIST_SECRET) {
+    console.log('[DRY_RUN] Worker non vérifié : SUBS_URL ou LIST_SECRET absent.');
+  } else {
+    for (const comp of COMPETITIONS) {
+      try {
+        const subs = await abonnes(comp.topic);
+        console.log(`[DRY_RUN] Worker joignable — ${comp.nom} : ${subs.length} abonné(s)`);
+      } catch (e) {
+        console.error(`[DRY_RUN] Worker INJOIGNABLE — ${comp.nom} : ${e.message}`);
+        process.exitCode = 1;   // run rouge : un secret erroné ne doit pas passer inaperçu
+      }
+    }
+  }
 }
 
 const etat = lireEtat();
@@ -180,7 +210,12 @@ for (const comp of COMPETITIONS) {
 
   // ─── Résumé : le lendemain à 9 h, sur la dernière journée terminée ───
   const jR = journeeTerminee(data);
-  if (jR && vu.resume !== jR) {
+  const finJ = jR ? Math.max(...parJournee(data, jR).map(m => +new Date(m.sort || 0))) : 0;
+  const depuisH = finJ ? (maintenant - finJ) / 3600000 - DUREE_MATCH_H : 0;
+  if (jR && vu.resume !== jR && depuisH > RESUME_MAX_H) {
+    console.log(`${comp.nom} : résumé J${jR} périmé (journée terminée il y a ${Math.round(depuisH)} h) — ignoré`);
+    vu.resume = jR; modifie = true;
+  } else if (jR && vu.resume !== jR) {
     if (heureParis === HEURE_RESUME) {
       const msg = messageResume(data, comp, jR);
       console.log(`${comp.nom} : résumé J${jR}`);
