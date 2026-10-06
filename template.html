@@ -1393,7 +1393,7 @@ if('serviceWorker' in navigator){
   }
 })();
 // Notifications push (8h : résultats de la veille + justesse). Inactif tant que PUSH_CONFIG n'est pas renseigné.
-var PUSH_CONFIG = { subscribeUrl: "https://pronobot-push.nicolasmartin-contact.workers.dev/subscribe", vapidPublicKey: "BEqVoqWHGNDWSknn8vx4a65zPx39eqGtEnt9wQ3tVW6z81BPxbdOe5kVdWeApywW27Qrd8NbT0KPUPvjzrUbhYw" };
+var PUSH_CONFIG = { subscribeUrl: "https://pronobot-push.nico-mtn.workers.dev/subscribe", vapidPublicKey: "BEqVoqWHGNDWSknn8vx4a65zPx39eqGtEnt9wQ3tVW6z81BPxbdOe5kVdWeApywW27Qrd8NbT0KPUPvjzrUbhYw" };
 (function(){
   var bar=document.getElementById('notif-bar');
   function configured(){ return PUSH_CONFIG.subscribeUrl && PUSH_CONFIG.vapidPublicKey; }
