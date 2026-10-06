@@ -1187,7 +1187,7 @@ var view="feed", mode="reel", sub="clt";
 var PUSH = {
  topic: "__SLUG__",
  comps: /*__COMPS__*/[],
- base: "https://pronobot-push.nicolasmartin-contact.workers.dev",
+ base: "https://pronobot-push.nico-mtn.workers.dev",
  cle: "BEqVoqWHGNDWSknn8vx4a65zPx39eqGtEnt9wQ3tVW6z81BPxbdOe5kVdWeApywW27Qrd8NbT0KPUPvjzrUbhYw"
 };
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){
