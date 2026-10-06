@@ -1,15 +1,17 @@
 {
   "_meta": {
     "role": "Dernière journée notifiée, par compétition et par type d'envoi. Empêche tout doublon : le cron passe toutes les 15 minutes, l'envoi n'a lieu qu'une fois.",
-    "champs": {
-      "annonce": "numéro de la dernière journée dont l'annonce (1 h avant le coup d'envoi) est partie",
-      "resume": "numéro de la dernière journée dont le bilan (lendemain 9 h) est parti"
-    },
-    "reinitialiser": "Mettre une valeur à null renvoie la notification correspondante au prochain passage du cron. Utile pour retester sans attendre la journée suivante.",
+    "maj": "2026-10-06T08:00:44.106Z",
     "author": "Nico-Mtn"
   },
   "etat": {
-    "ligue-1-france": { "annonce": null, "resume": null },
-    "premier-league-england": { "annonce": null, "resume": null }
+    "ligue-1-france": {
+      "annonce": null,
+      "resume": 5
+    },
+    "premier-league-england": {
+      "annonce": null,
+      "resume": 5
+    }
   }
 }
