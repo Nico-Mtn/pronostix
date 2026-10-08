@@ -790,6 +790,28 @@
       "home": "Marseille",
       "away": "PSG",
       "frozen_at": "2026-09-19T19:25:48Z"
+    },
+    "559669": {
+      "sh": 2,
+      "sa": 0,
+      "issue": "V",
+      "conf": 40,
+      "second": {
+        "sh": 0,
+        "sa": 1,
+        "issue": "D",
+        "conf": 31
+      },
+      "proba": {
+        "v": 40,
+        "n": 29,
+        "d": 31
+      },
+      "eh": 1544,
+      "ea": 1566,
+      "home": "RC Lens",
+      "away": "Olympique Lyon",
+      "frozen_at": "2026-10-08T22:39:36Z"
     }
   }
 }
