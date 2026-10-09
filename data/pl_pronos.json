@@ -872,6 +872,138 @@
       "home": "Fulham",
       "away": "Man United",
       "frozen_at": "2026-09-19T17:20:40Z"
+    },
+    "560593": {
+      "sh": 4,
+      "sa": 0,
+      "issue": "V",
+      "conf": 54,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 27
+      },
+      "proba": {
+        "v": 54,
+        "n": 27,
+        "d": 20
+      },
+      "eh": 1628,
+      "ea": 1518,
+      "home": "Arsenal",
+      "away": "Leeds United",
+      "frozen_at": "2026-10-09T17:14:55Z"
+    },
+    "560592": {
+      "sh": 3,
+      "sa": 3,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 5,
+        "sa": 1,
+        "issue": "V",
+        "conf": 37
+      },
+      "proba": {
+        "v": 37,
+        "n": 29,
+        "d": 34
+      },
+      "eh": 1484,
+      "ea": 1534,
+      "home": "Sunderland",
+      "away": "Brighton Hove",
+      "frozen_at": "2026-10-09T17:14:55Z"
+    },
+    "560595": {
+      "sh": 0,
+      "sa": 0,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 4,
+        "sa": 2,
+        "issue": "V",
+        "conf": 39
+      },
+      "proba": {
+        "v": 39,
+        "n": 29,
+        "d": 32
+      },
+      "eh": 1490,
+      "ea": 1518,
+      "home": "Chelsea",
+      "away": "Bournemouth",
+      "frozen_at": "2026-10-09T17:14:55Z"
+    },
+    "560599": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 3,
+        "sa": 1,
+        "issue": "V",
+        "conf": 38
+      },
+      "proba": {
+        "v": 38,
+        "n": 29,
+        "d": 33
+      },
+      "eh": 1421,
+      "ea": 1462,
+      "home": "Ipswich Town",
+      "away": "Fulham",
+      "frozen_at": "2026-10-09T17:14:55Z"
+    },
+    "560601": {
+      "sh": 3,
+      "sa": 1,
+      "issue": "V",
+      "conf": 40,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 31
+      },
+      "proba": {
+        "v": 40,
+        "n": 29,
+        "d": 31
+      },
+      "eh": 1505,
+      "ea": 1528,
+      "home": "Aston Villa",
+      "away": "Brentford",
+      "frozen_at": "2026-10-09T17:14:55Z"
+    },
+    "560600": {
+      "sh": 4,
+      "sa": 1,
+      "issue": "V",
+      "conf": 56,
+      "second": {
+        "sh": 2,
+        "sa": 2,
+        "issue": "N",
+        "conf": 26
+      },
+      "proba": {
+        "v": 56,
+        "n": 26,
+        "d": 18
+      },
+      "eh": 1558,
+      "ea": 1423,
+      "home": "Man United",
+      "away": "Tottenham",
+      "frozen_at": "2026-10-09T17:14:55Z"
     }
   }
 }

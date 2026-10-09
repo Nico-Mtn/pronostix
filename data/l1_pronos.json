@@ -812,6 +812,28 @@
       "home": "RC Lens",
       "away": "Olympique Lyon",
       "frozen_at": "2026-10-08T22:39:36Z"
+    },
+    "559674": {
+      "sh": 1,
+      "sa": 0,
+      "issue": "V",
+      "conf": 56,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 26
+      },
+      "proba": {
+        "v": 56,
+        "n": 26,
+        "d": 18
+      },
+      "eh": 1567,
+      "ea": 1437,
+      "home": "Lille",
+      "away": "Le Havre",
+      "frozen_at": "2026-10-09T17:14:52Z"
     }
   }
 }
