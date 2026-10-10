@@ -1004,6 +1004,72 @@
       "home": "Man United",
       "away": "Tottenham",
       "frozen_at": "2026-10-09T17:14:55Z"
+    },
+    "560594": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 3,
+        "sa": 2,
+        "issue": "V",
+        "conf": 36
+      },
+      "proba": {
+        "v": 36,
+        "n": 29,
+        "d": 35
+      },
+      "eh": 1443,
+      "ea": 1501,
+      "home": "Hull City",
+      "away": "Everton",
+      "frozen_at": "2026-10-10T16:01:23Z"
+    },
+    "560596": {
+      "sh": 1,
+      "sa": 0,
+      "issue": "V",
+      "conf": 40,
+      "second": {
+        "sh": 1,
+        "sa": 3,
+        "issue": "D",
+        "conf": 32
+      },
+      "proba": {
+        "v": 40,
+        "n": 29,
+        "d": 32
+      },
+      "eh": 1451,
+      "ea": 1476,
+      "home": "Crystal Palace",
+      "away": "Nottingham",
+      "frozen_at": "2026-10-10T16:01:23Z"
+    },
+    "560598": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 39
+      },
+      "proba": {
+        "v": 32,
+        "n": 29,
+        "d": 39
+      },
+      "eh": 1537,
+      "ea": 1635,
+      "home": "Liverpool",
+      "away": "Man City",
+      "frozen_at": "2026-10-10T16:01:23Z"
     }
   }
 }
