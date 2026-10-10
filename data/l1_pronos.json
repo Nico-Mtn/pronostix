@@ -966,6 +966,28 @@
       "home": "Stade Rennais",
       "away": "Auxerre",
       "frozen_at": "2026-10-10T16:01:15Z"
+    },
+    "559671": {
+      "sh": 0,
+      "sa": 0,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 38
+      },
+      "proba": {
+        "v": 33,
+        "n": 29,
+        "d": 38
+      },
+      "eh": 1408,
+      "ea": 1501,
+      "home": "Troyes",
+      "away": "Marseille",
+      "frozen_at": "2026-10-10T20:12:14Z"
     }
   }
 }
