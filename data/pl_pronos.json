@@ -1070,6 +1070,28 @@
       "home": "Liverpool",
       "away": "Man City",
       "frozen_at": "2026-10-10T16:01:23Z"
+    },
+    "560597": {
+      "sh": 2,
+      "sa": 2,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 38
+      },
+      "proba": {
+        "v": 33,
+        "n": 29,
+        "d": 38
+      },
+      "eh": 1402,
+      "ea": 1493,
+      "home": "Coventry City",
+      "away": "Newcastle",
+      "frozen_at": "2026-10-11T20:28:15Z"
     }
   }
 }
