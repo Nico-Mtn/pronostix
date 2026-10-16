@@ -1180,6 +1180,28 @@
       "home": "Brentford",
       "away": "Liverpool",
       "frozen_at": "2026-10-16T15:04:29Z"
+    },
+    "560607": {
+      "sh": 2,
+      "sa": 0,
+      "issue": "V",
+      "conf": 39,
+      "second": {
+        "sh": 0,
+        "sa": 2,
+        "issue": "D",
+        "conf": 32
+      },
+      "proba": {
+        "v": 39,
+        "n": 29,
+        "d": 32
+      },
+      "eh": 1478,
+      "ea": 1504,
+      "home": "Newcastle",
+      "away": "Aston Villa",
+      "frozen_at": "2026-10-16T18:52:08Z"
     }
   }
 }

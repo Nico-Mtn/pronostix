@@ -1010,6 +1010,72 @@
       "home": "Le Mans",
       "away": "Toulouse",
       "frozen_at": "2026-10-15T19:16:53Z"
+    },
+    "559662": {
+      "sh": 0,
+      "sa": 0,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 3,
+        "issue": "D",
+        "conf": 38
+      },
+      "proba": {
+        "v": 33,
+        "n": 29,
+        "d": 38
+      },
+      "eh": 1515,
+      "ea": 1609,
+      "home": "Strasbourg",
+      "away": "PSG",
+      "frozen_at": "2026-10-16T18:52:05Z"
+    },
+    "559659": {
+      "sh": 2,
+      "sa": 4,
+      "issue": "D",
+      "conf": 45,
+      "second": {
+        "sh": 2,
+        "sa": 2,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 27,
+        "n": 28,
+        "d": 45
+      },
+      "eh": 1396,
+      "ea": 1553,
+      "home": "Troyes",
+      "away": "RC Lens",
+      "frozen_at": "2026-10-16T18:52:05Z"
+    },
+    "559660": {
+      "sh": 4,
+      "sa": 0,
+      "issue": "V",
+      "conf": 53,
+      "second": {
+        "sh": 3,
+        "sa": 3,
+        "issue": "N",
+        "conf": 27
+      },
+      "proba": {
+        "v": 53,
+        "n": 27,
+        "d": 20
+      },
+      "eh": 1572,
+      "ea": 1469,
+      "home": "Lille",
+      "away": "Brest",
+      "frozen_at": "2026-10-16T18:52:05Z"
     }
   }
 }
