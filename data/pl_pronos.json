@@ -1202,6 +1202,72 @@
       "home": "Newcastle",
       "away": "Aston Villa",
       "frozen_at": "2026-10-16T18:52:08Z"
+    },
+    "560604": {
+      "sh": 5,
+      "sa": 1,
+      "issue": "V",
+      "conf": 46,
+      "second": {
+        "sh": 2,
+        "sa": 2,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 46,
+        "n": 28,
+        "d": 26
+      },
+      "eh": 1505,
+      "ea": 1471,
+      "home": "Bournemouth",
+      "away": "Sunderland",
+      "frozen_at": "2026-10-17T13:59:42Z"
+    },
+    "560605": {
+      "sh": 2,
+      "sa": 2,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 3,
+        "sa": 2,
+        "issue": "V",
+        "conf": 38
+      },
+      "proba": {
+        "v": 38,
+        "n": 29,
+        "d": 33
+      },
+      "eh": 1512,
+      "ea": 1553,
+      "home": "Leeds United",
+      "away": "Man United",
+      "frozen_at": "2026-10-17T13:59:42Z"
+    },
+    "560609": {
+      "sh": 4,
+      "sa": 1,
+      "issue": "V",
+      "conf": 51,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 27
+      },
+      "proba": {
+        "v": 51,
+        "n": 27,
+        "d": 22
+      },
+      "eh": 1547,
+      "ea": 1462,
+      "home": "Brighton Hove",
+      "away": "Crystal Palace",
+      "frozen_at": "2026-10-17T13:59:42Z"
     }
   }
 }
