@@ -1098,6 +1098,72 @@
       "home": "Angers SCO",
       "away": "Marseille",
       "frozen_at": "2026-10-17T13:59:38Z"
+    },
+    "559657": {
+      "sh": 0,
+      "sa": 0,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 0,
+        "sa": 6,
+        "issue": "D",
+        "conf": 36
+      },
+      "proba": {
+        "v": 35,
+        "n": 29,
+        "d": 36
+      },
+      "eh": 1498,
+      "ea": 1567,
+      "home": "Lorient",
+      "away": "Monaco",
+      "frozen_at": "2026-10-17T16:54:11Z"
+    },
+    "559658": {
+      "sh": 2,
+      "sa": 2,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 0,
+        "issue": "V",
+        "conf": 39
+      },
+      "proba": {
+        "v": 39,
+        "n": 29,
+        "d": 33
+      },
+      "eh": 1529,
+      "ea": 1565,
+      "home": "Paris FC",
+      "away": "Stade Rennais",
+      "frozen_at": "2026-10-17T16:54:11Z"
+    },
+    "559663": {
+      "sh": 5,
+      "sa": 2,
+      "issue": "V",
+      "conf": 40,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 32
+      },
+      "proba": {
+        "v": 40,
+        "n": 29,
+        "d": 32
+      },
+      "eh": 1432,
+      "ea": 1457,
+      "home": "Le Havre",
+      "away": "Auxerre",
+      "frozen_at": "2026-10-17T16:54:11Z"
     }
   }
 }

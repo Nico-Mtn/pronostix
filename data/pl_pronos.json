@@ -1268,6 +1268,28 @@
       "home": "Brighton Hove",
       "away": "Crystal Palace",
       "frozen_at": "2026-10-17T13:59:42Z"
+    },
+    "560608": {
+      "sh": 0,
+      "sa": 1,
+      "issue": "D",
+      "conf": 45,
+      "second": {
+        "sh": 2,
+        "sa": 2,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 27,
+        "n": 28,
+        "d": 45
+      },
+      "eh": 1476,
+      "ea": 1634,
+      "home": "Nottingham",
+      "away": "Arsenal",
+      "frozen_at": "2026-10-17T16:54:13Z"
     }
   }
 }
