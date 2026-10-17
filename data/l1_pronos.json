@@ -1164,6 +1164,28 @@
       "home": "Le Havre",
       "away": "Auxerre",
       "frozen_at": "2026-10-17T16:54:11Z"
+    },
+    "559665": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 53,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 27
+      },
+      "proba": {
+        "v": 53,
+        "n": 27,
+        "d": 20
+      },
+      "eh": 1556,
+      "ea": 1450,
+      "home": "Olympique Lyon",
+      "away": "Nice",
+      "frozen_at": "2026-10-17T18:56:41Z"
     }
   }
 }
