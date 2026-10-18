@@ -1290,6 +1290,28 @@
       "home": "Nottingham",
       "away": "Arsenal",
       "frozen_at": "2026-10-17T16:54:13Z"
+    },
+    "560606": {
+      "sh": 3,
+      "sa": 0,
+      "issue": "V",
+      "conf": 43,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 43,
+        "n": 28,
+        "d": 28
+      },
+      "eh": 1428,
+      "ea": 1416,
+      "home": "Tottenham",
+      "away": "Coventry City",
+      "frozen_at": "2026-10-18T19:31:25Z"
     }
   }
 }
