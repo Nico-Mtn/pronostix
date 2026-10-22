@@ -1312,6 +1312,28 @@
       "home": "Tottenham",
       "away": "Coventry City",
       "frozen_at": "2026-10-18T19:31:25Z"
+    },
+    "560620": {
+      "sh": 2,
+      "sa": 2,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 0,
+        "issue": "V",
+        "conf": 39
+      },
+      "proba": {
+        "v": 39,
+        "n": 29,
+        "d": 32
+      },
+      "eh": 1428,
+      "ea": 1457,
+      "home": "Ipswich Town",
+      "away": "Nottingham",
+      "frozen_at": "2026-10-22T19:38:18Z"
     }
   }
 }

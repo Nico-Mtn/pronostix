@@ -1186,6 +1186,28 @@
       "home": "Olympique Lyon",
       "away": "Nice",
       "frozen_at": "2026-10-17T18:56:41Z"
+    },
+    "559654": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 45,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 45,
+        "n": 28,
+        "d": 27
+      },
+      "eh": 1474,
+      "ea": 1444,
+      "home": "Brest",
+      "away": "Nice",
+      "frozen_at": "2026-10-22T19:38:14Z"
     }
   }
 }
