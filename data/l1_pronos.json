@@ -1208,6 +1208,28 @@
       "home": "Brest",
       "away": "Nice",
       "frozen_at": "2026-10-22T19:38:14Z"
+    },
+    "559652": {
+      "sh": 3,
+      "sa": 2,
+      "issue": "V",
+      "conf": 45,
+      "second": {
+        "sh": 2,
+        "sa": 2,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 45,
+        "n": 28,
+        "d": 27
+      },
+      "eh": 1563,
+      "ea": 1540,
+      "home": "RC Lens",
+      "away": "Paris FC",
+      "frozen_at": "2026-10-23T19:38:44Z"
     }
   }
 }
