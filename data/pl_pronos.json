@@ -1422,6 +1422,94 @@
       "home": "Chelsea",
       "away": "Tottenham",
       "frozen_at": "2026-10-23T19:38:47Z"
+    },
+    "560612": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 40,
+      "second": {
+        "sh": 0,
+        "sa": 3,
+        "issue": "D",
+        "conf": 31
+      },
+      "proba": {
+        "v": 40,
+        "n": 29,
+        "d": 31
+      },
+      "eh": 1539,
+      "ea": 1556,
+      "home": "Liverpool",
+      "away": "Brighton Hove",
+      "frozen_at": "2026-10-24T14:10:12Z"
+    },
+    "560613": {
+      "sh": 3,
+      "sa": 1,
+      "issue": "V",
+      "conf": 41,
+      "second": {
+        "sh": 0,
+        "sa": 2,
+        "issue": "D",
+        "conf": 30
+      },
+      "proba": {
+        "v": 41,
+        "n": 29,
+        "d": 30
+      },
+      "eh": 1453,
+      "ea": 1466,
+      "home": "Crystal Palace",
+      "away": "Newcastle",
+      "frozen_at": "2026-10-24T14:10:12Z"
+    },
+    "560615": {
+      "sh": 2,
+      "sa": 0,
+      "issue": "V",
+      "conf": 46,
+      "second": {
+        "sh": 0,
+        "sa": 0,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 46,
+        "n": 28,
+        "d": 26
+      },
+      "eh": 1553,
+      "ea": 1514,
+      "home": "Man United",
+      "away": "Bournemouth",
+      "frozen_at": "2026-10-24T14:10:12Z"
+    },
+    "560619": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 37
+      },
+      "proba": {
+        "v": 34,
+        "n": 29,
+        "d": 37
+      },
+      "eh": 1434,
+      "ea": 1516,
+      "home": "Hull City",
+      "away": "Brentford",
+      "frozen_at": "2026-10-24T14:10:12Z"
     }
   }
 }

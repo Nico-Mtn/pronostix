@@ -1230,6 +1230,28 @@
       "home": "RC Lens",
       "away": "Paris FC",
       "frozen_at": "2026-10-23T19:38:44Z"
+    },
+    "559650": {
+      "sh": 2,
+      "sa": 0,
+      "issue": "V",
+      "conf": 41,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 30
+      },
+      "proba": {
+        "v": 41,
+        "n": 29,
+        "d": 30
+      },
+      "eh": 1556,
+      "ea": 1568,
+      "home": "Monaco",
+      "away": "Lille",
+      "frozen_at": "2026-10-24T14:10:06Z"
     }
   }
 }
