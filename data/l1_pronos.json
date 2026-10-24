@@ -1252,6 +1252,116 @@
       "home": "Monaco",
       "away": "Lille",
       "frozen_at": "2026-10-24T14:10:06Z"
+    },
+    "559649": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 53,
+      "second": {
+        "sh": 0,
+        "sa": 0,
+        "issue": "N",
+        "conf": 27
+      },
+      "proba": {
+        "v": 53,
+        "n": 27,
+        "d": 20
+      },
+      "eh": 1525,
+      "ea": 1418,
+      "home": "Marseille",
+      "away": "Le Havre",
+      "frozen_at": "2026-10-24T17:30:38Z"
+    },
+    "559651": {
+      "sh": 3,
+      "sa": 0,
+      "issue": "V",
+      "conf": 47,
+      "second": {
+        "sh": 4,
+        "sa": 4,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 47,
+        "n": 28,
+        "d": 25
+      },
+      "eh": 1555,
+      "ea": 1504,
+      "home": "Stade Rennais",
+      "away": "Strasbourg",
+      "frozen_at": "2026-10-24T17:30:38Z"
+    },
+    "559653": {
+      "sh": 3,
+      "sa": 3,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 1,
+        "sa": 2,
+        "issue": "D",
+        "conf": 37
+      },
+      "proba": {
+        "v": 34,
+        "n": 29,
+        "d": 37
+      },
+      "eh": 1428,
+      "ea": 1509,
+      "home": "Angers SCO",
+      "away": "Lorient",
+      "frozen_at": "2026-10-24T17:30:38Z"
+    },
+    "559655": {
+      "sh": 3,
+      "sa": 1,
+      "issue": "V",
+      "conf": 54,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 26
+      },
+      "proba": {
+        "v": 54,
+        "n": 26,
+        "d": 19
+      },
+      "eh": 1503,
+      "ea": 1387,
+      "home": "Toulouse",
+      "away": "Troyes",
+      "frozen_at": "2026-10-24T17:30:38Z"
+    },
+    "559656": {
+      "sh": 4,
+      "sa": 1,
+      "issue": "V",
+      "conf": 48,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 48,
+        "n": 28,
+        "d": 24
+      },
+      "eh": 1470,
+      "ea": 1411,
+      "home": "Auxerre",
+      "away": "Le Mans",
+      "frozen_at": "2026-10-24T17:30:38Z"
     }
   }
 }
