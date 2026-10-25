@@ -1362,6 +1362,28 @@
       "home": "Auxerre",
       "away": "Le Mans",
       "frozen_at": "2026-10-24T17:30:38Z"
+    },
+    "559648": {
+      "sh": 3,
+      "sa": 1,
+      "issue": "V",
+      "conf": 48,
+      "second": {
+        "sh": 2,
+        "sa": 2,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 48,
+        "n": 28,
+        "d": 24
+      },
+      "eh": 1620,
+      "ea": 1562,
+      "home": "PSG",
+      "away": "Olympique Lyon",
+      "frozen_at": "2026-10-25T20:29:23Z"
     }
   }
 }
