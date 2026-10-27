@@ -1,13 +1,13 @@
 {
   "_meta": {
     "role": "Dernière journée notifiée, par compétition et par type d'envoi. Empêche tout doublon : le cron passe toutes les 15 minutes, l'envoi n'a lieu qu'une fois.",
-    "maj": "2026-10-27T07:00:52.213Z",
+    "maj": "2026-10-27T08:00:55.277Z",
     "author": "Nico-Mtn"
   },
   "etat": {
     "ligue-1-france": {
       "annonce": 8,
-      "resume": 7
+      "resume": 8
     },
     "premier-league-england": {
       "annonce": 8,
