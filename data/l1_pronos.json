@@ -1384,6 +1384,72 @@
       "home": "PSG",
       "away": "Olympique Lyon",
       "frozen_at": "2026-10-25T20:29:23Z"
+    },
+    "559644": {
+      "sh": 0,
+      "sa": 2,
+      "issue": "D",
+      "conf": 51,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 27
+      },
+      "proba": {
+        "v": 22,
+        "n": 27,
+        "d": 51
+      },
+      "eh": 1412,
+      "ea": 1628,
+      "home": "Le Havre",
+      "away": "PSG",
+      "frozen_at": "2026-10-29T21:53:50Z"
+    },
+    "559646": {
+      "sh": 1,
+      "sa": 4,
+      "issue": "D",
+      "conf": 40,
+      "second": {
+        "sh": 5,
+        "sa": 1,
+        "issue": "V",
+        "conf": 32
+      },
+      "proba": {
+        "v": 32,
+        "n": 29,
+        "d": 40
+      },
+      "eh": 1458,
+      "ea": 1564,
+      "home": "Nice",
+      "away": "Stade Rennais",
+      "frozen_at": "2026-10-29T21:53:50Z"
+    },
+    "559639": {
+      "sh": 4,
+      "sa": 3,
+      "issue": "V",
+      "conf": 42,
+      "second": {
+        "sh": 0,
+        "sa": 3,
+        "issue": "D",
+        "conf": 29
+      },
+      "proba": {
+        "v": 42,
+        "n": 29,
+        "d": 29
+      },
+      "eh": 1569,
+      "ea": 1571,
+      "home": "Lille",
+      "away": "RC Lens",
+      "frozen_at": "2026-10-29T21:53:50Z"
     }
   }
 }
