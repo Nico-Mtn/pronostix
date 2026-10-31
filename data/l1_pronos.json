@@ -1494,6 +1494,50 @@
       "home": "Strasbourg",
       "away": "Auxerre",
       "frozen_at": "2026-10-31T15:55:08Z"
+    },
+    "559640": {
+      "sh": 4,
+      "sa": 1,
+      "issue": "V",
+      "conf": 55,
+      "second": {
+        "sh": 2,
+        "sa": 2,
+        "issue": "N",
+        "conf": 26
+      },
+      "proba": {
+        "v": 55,
+        "n": 26,
+        "d": 19
+      },
+      "eh": 1554,
+      "ea": 1429,
+      "home": "Olympique Lyon",
+      "away": "Angers SCO",
+      "frozen_at": "2026-10-31T19:37:54Z"
+    },
+    "559642": {
+      "sh": 3,
+      "sa": 1,
+      "issue": "V",
+      "conf": 40,
+      "second": {
+        "sh": 0,
+        "sa": 2,
+        "issue": "D",
+        "conf": 31
+      },
+      "proba": {
+        "v": 40,
+        "n": 29,
+        "d": 31
+      },
+      "eh": 1531,
+      "ea": 1554,
+      "home": "Paris FC",
+      "away": "Monaco",
+      "frozen_at": "2026-10-31T19:37:54Z"
     }
   }
 }

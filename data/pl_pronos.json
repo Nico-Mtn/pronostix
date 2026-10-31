@@ -1708,6 +1708,28 @@
       "home": "Aston Villa",
       "away": "Fulham",
       "frozen_at": "2026-10-30T21:14:42Z"
+    },
+    "560631": {
+      "sh": 0,
+      "sa": 0,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 0,
+        "sa": 2,
+        "issue": "D",
+        "conf": 39
+      },
+      "proba": {
+        "v": 32,
+        "n": 29,
+        "d": 39
+      },
+      "eh": 1549,
+      "ea": 1647,
+      "home": "Liverpool",
+      "away": "Arsenal",
+      "frozen_at": "2026-10-31T19:37:57Z"
     }
   }
 }
