@@ -1472,6 +1472,28 @@
       "home": "Troyes",
       "away": "Le Mans",
       "frozen_at": "2026-10-30T21:14:38Z"
+    },
+    "559647": {
+      "sh": 3,
+      "sa": 0,
+      "issue": "V",
+      "conf": 45,
+      "second": {
+        "sh": 3,
+        "sa": 3,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 45,
+        "n": 28,
+        "d": 27
+      },
+      "eh": 1495,
+      "ea": 1467,
+      "home": "Strasbourg",
+      "away": "Auxerre",
+      "frozen_at": "2026-10-31T15:55:08Z"
     }
   }
 }
