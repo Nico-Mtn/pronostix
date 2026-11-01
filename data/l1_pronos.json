@@ -1560,6 +1560,28 @@
       "home": "Marseille",
       "away": "Toulouse",
       "frozen_at": "2026-10-31T22:55:44Z"
+    },
+    "559641": {
+      "sh": 3,
+      "sa": 1,
+      "issue": "V",
+      "conf": 47,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 47,
+        "n": 28,
+        "d": 25
+      },
+      "eh": 1508,
+      "ea": 1460,
+      "home": "Lorient",
+      "away": "Brest",
+      "frozen_at": "2026-11-01T20:57:12Z"
     }
   }
 }

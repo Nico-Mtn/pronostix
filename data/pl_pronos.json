@@ -1730,6 +1730,28 @@
       "home": "Liverpool",
       "away": "Arsenal",
       "frozen_at": "2026-10-31T19:37:57Z"
+    },
+    "560622": {
+      "sh": 2,
+      "sa": 0,
+      "issue": "V",
+      "conf": 42,
+      "second": {
+        "sh": 0,
+        "sa": 2,
+        "issue": "D",
+        "conf": 29
+      },
+      "proba": {
+        "v": 42,
+        "n": 29,
+        "d": 29
+      },
+      "eh": 1480,
+      "ea": 1481,
+      "home": "Newcastle",
+      "away": "Everton",
+      "frozen_at": "2026-11-01T20:57:16Z"
     }
   }
 }
