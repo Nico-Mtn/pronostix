@@ -1752,6 +1752,28 @@
       "home": "Newcastle",
       "away": "Everton",
       "frozen_at": "2026-11-01T20:57:16Z"
+    },
+    "560634": {
+      "sh": 6,
+      "sa": 3,
+      "issue": "V",
+      "conf": 51,
+      "second": {
+        "sh": 0,
+        "sa": 0,
+        "issue": "N",
+        "conf": 27
+      },
+      "proba": {
+        "v": 51,
+        "n": 27,
+        "d": 22
+      },
+      "eh": 1495,
+      "ea": 1408,
+      "home": "Everton",
+      "away": "Coventry City",
+      "frozen_at": "2026-11-05T23:44:48Z"
     }
   }
 }
