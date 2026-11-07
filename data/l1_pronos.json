@@ -1758,6 +1758,28 @@
       "home": "Angers SCO",
       "away": "Nice",
       "frozen_at": "2026-11-07T16:41:30Z"
+    },
+    "559630": {
+      "sh": 2,
+      "sa": 0,
+      "issue": "V",
+      "conf": 44,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 44,
+        "n": 28,
+        "d": 27
+      },
+      "eh": 1562,
+      "ea": 1541,
+      "home": "RC Lens",
+      "away": "Marseille",
+      "frozen_at": "2026-11-07T20:36:27Z"
     }
   }
 }
