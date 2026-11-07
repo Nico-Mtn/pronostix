@@ -1862,6 +1862,116 @@
       "home": "Nottingham",
       "away": "Man City",
       "frozen_at": "2026-11-06T17:44:42Z"
+    },
+    "560635": {
+      "sh": 0,
+      "sa": 2,
+      "issue": "D",
+      "conf": 40,
+      "second": {
+        "sh": 1,
+        "sa": 0,
+        "issue": "V",
+        "conf": 31
+      },
+      "proba": {
+        "v": 31,
+        "n": 29,
+        "d": 40
+      },
+      "eh": 1429,
+      "ea": 1539,
+      "home": "Crystal Palace",
+      "away": "Liverpool",
+      "frozen_at": "2026-11-07T16:41:34Z"
+    },
+    "560636": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 3,
+        "sa": 1,
+        "issue": "V",
+        "conf": 36
+      },
+      "proba": {
+        "v": 36,
+        "n": 29,
+        "d": 35
+      },
+      "eh": 1450,
+      "ea": 1512,
+      "home": "Sunderland",
+      "away": "Chelsea",
+      "frozen_at": "2026-11-07T16:41:34Z"
+    },
+    "560637": {
+      "sh": 1,
+      "sa": 4,
+      "issue": "D",
+      "conf": 40,
+      "second": {
+        "sh": 2,
+        "sa": 1,
+        "issue": "V",
+        "conf": 31
+      },
+      "proba": {
+        "v": 31,
+        "n": 29,
+        "d": 40
+      },
+      "eh": 1429,
+      "ea": 1541,
+      "home": "Ipswich Town",
+      "away": "Bournemouth",
+      "frozen_at": "2026-11-07T16:41:34Z"
+    },
+    "560638": {
+      "sh": 3,
+      "sa": 2,
+      "issue": "V",
+      "conf": 46,
+      "second": {
+        "sh": 2,
+        "sa": 2,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 46,
+        "n": 28,
+        "d": 26
+      },
+      "eh": 1561,
+      "ea": 1524,
+      "home": "Brighton Hove",
+      "away": "Brentford",
+      "frozen_at": "2026-11-07T16:41:34Z"
+    },
+    "560639": {
+      "sh": 5,
+      "sa": 0,
+      "issue": "V",
+      "conf": 42,
+      "second": {
+        "sh": 1,
+        "sa": 3,
+        "issue": "D",
+        "conf": 29
+      },
+      "proba": {
+        "v": 42,
+        "n": 29,
+        "d": 29
+      },
+      "eh": 1524,
+      "ea": 1526,
+      "home": "Man United",
+      "away": "Aston Villa",
+      "frozen_at": "2026-11-07T16:41:34Z"
     }
   }
 }
