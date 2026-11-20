@@ -1802,6 +1802,28 @@
       "home": "Troyes",
       "away": "Le Havre",
       "frozen_at": "2026-11-20T01:21:35Z"
+    },
+    "559628": {
+      "sh": 1,
+      "sa": 2,
+      "issue": "D",
+      "conf": 45,
+      "second": {
+        "sh": 2,
+        "sa": 2,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 27,
+        "n": 28,
+        "d": 45
+      },
+      "eh": 1486,
+      "ea": 1641,
+      "home": "Nice",
+      "away": "PSG",
+      "frozen_at": "2026-11-20T18:54:55Z"
     }
   }
 }
