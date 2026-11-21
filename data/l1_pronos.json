@@ -1912,6 +1912,50 @@
       "home": "Strasbourg",
       "away": "Brest",
       "frozen_at": "2026-11-21T00:30:24Z"
+    },
+    "559625": {
+      "sh": 6,
+      "sa": 0,
+      "issue": "V",
+      "conf": 57,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 26
+      },
+      "proba": {
+        "v": 57,
+        "n": 26,
+        "d": 17
+      },
+      "eh": 1553,
+      "ea": 1410,
+      "home": "Paris FC",
+      "away": "Angers SCO",
+      "frozen_at": "2026-11-21T17:49:37Z"
+    },
+    "559626": {
+      "sh": 1,
+      "sa": 1,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 5,
+        "sa": 0,
+        "issue": "V",
+        "conf": 39
+      },
+      "proba": {
+        "v": 39,
+        "n": 29,
+        "d": 32
+      },
+      "eh": 1504,
+      "ea": 1536,
+      "home": "Lorient",
+      "away": "Stade Rennais",
+      "frozen_at": "2026-11-21T17:49:37Z"
     }
   }
 }

@@ -2126,6 +2126,50 @@
       "home": "Newcastle",
       "away": "Arsenal",
       "frozen_at": "2026-11-20T18:54:58Z"
+    },
+    "560646": {
+      "sh": 0,
+      "sa": 6,
+      "issue": "D",
+      "conf": 43,
+      "second": {
+        "sh": 2,
+        "sa": 2,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 28,
+        "n": 28,
+        "d": 43
+      },
+      "eh": 1429,
+      "ea": 1570,
+      "home": "Hull City",
+      "away": "Brighton Hove",
+      "frozen_at": "2026-11-21T17:49:42Z"
+    },
+    "560645": {
+      "sh": 3,
+      "sa": 2,
+      "issue": "V",
+      "conf": 45,
+      "second": {
+        "sh": 0,
+        "sa": 0,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 45,
+        "n": 28,
+        "d": 27
+      },
+      "eh": 1550,
+      "ea": 1523,
+      "home": "Liverpool",
+      "away": "Man United",
+      "frozen_at": "2026-11-21T17:49:42Z"
     }
   }
 }
