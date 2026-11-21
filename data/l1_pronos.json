@@ -1824,6 +1824,94 @@
       "home": "Nice",
       "away": "PSG",
       "frozen_at": "2026-11-20T18:54:55Z"
+    },
+    "559621": {
+      "sh": 4,
+      "sa": 2,
+      "issue": "V",
+      "conf": 52,
+      "second": {
+        "sh": 0,
+        "sa": 0,
+        "issue": "N",
+        "conf": 27
+      },
+      "proba": {
+        "v": 52,
+        "n": 27,
+        "d": 21
+      },
+      "eh": 1541,
+      "ea": 1446,
+      "home": "Monaco",
+      "away": "Auxerre",
+      "frozen_at": "2026-11-21T00:30:24Z"
+    },
+    "559623": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 47,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 47,
+        "n": 28,
+        "d": 25
+      },
+      "eh": 1548,
+      "ea": 1500,
+      "home": "RC Lens",
+      "away": "Toulouse",
+      "frozen_at": "2026-11-21T00:30:24Z"
+    },
+    "559624": {
+      "sh": 2,
+      "sa": 0,
+      "issue": "V",
+      "conf": 47,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 47,
+        "n": 28,
+        "d": 25
+      },
+      "eh": 1591,
+      "ea": 1547,
+      "home": "Lille",
+      "away": "Olympique Lyon",
+      "frozen_at": "2026-11-21T00:30:24Z"
+    },
+    "559627": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 43,
+      "second": {
+        "sh": 0,
+        "sa": 1,
+        "issue": "D",
+        "conf": 29
+      },
+      "proba": {
+        "v": 43,
+        "n": 29,
+        "d": 29
+      },
+      "eh": 1495,
+      "ea": 1489,
+      "home": "Strasbourg",
+      "away": "Brest",
+      "frozen_at": "2026-11-21T00:30:24Z"
     }
   }
 }
