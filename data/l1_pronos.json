@@ -1956,6 +1956,28 @@
       "home": "Lorient",
       "away": "Stade Rennais",
       "frozen_at": "2026-11-21T17:49:37Z"
+    },
+    "559629": {
+      "sh": 2,
+      "sa": 1,
+      "issue": "V",
+      "conf": 58,
+      "second": {
+        "sh": 1,
+        "sa": 1,
+        "issue": "N",
+        "conf": 26
+      },
+      "proba": {
+        "v": 58,
+        "n": 26,
+        "d": 17
+      },
+      "eh": 1554,
+      "ea": 1406,
+      "home": "Marseille",
+      "away": "Le Mans",
+      "frozen_at": "2026-11-21T22:35:59Z"
     }
   }
 }
