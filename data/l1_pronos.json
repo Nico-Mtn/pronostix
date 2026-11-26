@@ -1978,6 +1978,28 @@
       "home": "Marseille",
       "away": "Le Mans",
       "frozen_at": "2026-11-21T22:35:59Z"
+    },
+    "559616": {
+      "sh": 3,
+      "sa": 3,
+      "issue": "N",
+      "conf": 29,
+      "second": {
+        "sh": 3,
+        "sa": 2,
+        "issue": "V",
+        "conf": 36
+      },
+      "proba": {
+        "v": 36,
+        "n": 29,
+        "d": 35
+      },
+      "eh": 1502,
+      "ea": 1559,
+      "home": "Brest",
+      "away": "Paris FC",
+      "frozen_at": "2026-11-26T19:55:28Z"
     }
   }
 }
