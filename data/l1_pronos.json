@@ -2000,6 +2000,28 @@
       "home": "Brest",
       "away": "Paris FC",
       "frozen_at": "2026-11-26T19:55:28Z"
+    },
+    "559612": {
+      "sh": 0,
+      "sa": 1,
+      "issue": "D",
+      "conf": 43,
+      "second": {
+        "sh": 0,
+        "sa": 0,
+        "issue": "N",
+        "conf": 28
+      },
+      "proba": {
+        "v": 28,
+        "n": 28,
+        "d": 43
+      },
+      "eh": 1403,
+      "ea": 1545,
+      "home": "Angers SCO",
+      "away": "RC Lens",
+      "frozen_at": "2026-11-27T19:43:44Z"
     }
   }
 }
